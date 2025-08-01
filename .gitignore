@@ -1,0 +1,41 @@
+# Jupyter Notebook autosaves
+.ipynb_checkpoints/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment folders
+.env/
+env/
+venv/
+.venv/
+
+# Jupyter runtime and kernel info
+*.json
+*.sqlite3
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (if using VS Code)
+.vscode/
+
+# Environment files
+*.env
+*.envrc
+
+# Data/output folders (optional - remove if you want to track data files)
+data/
+outputs/
+*.csv
+*.xlsx
+*.h5
+
+# Others (notebook output metadata)
+*.nbconvert.ipynb
+
