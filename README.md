@@ -2,7 +2,7 @@
 
 ## Overview
 
-This program is designed to rebuild your mathematical foundations from the ground up using world-class free resources, with Python as a computational tool throughout. The plan emphasizes conceptual understanding through visual learning, progressing from basic arithmetic through calculus and linear algebra.
+This program is designed to rebuild my mathematical foundations from the ground up using world-class free resources, with Python as a computational tool throughout. The plan emphasizes conceptual understanding through visual learning, progressing from basic arithmetic through calculus and linear algebra.
 
 ## Program Structure
 
@@ -376,6 +376,6 @@ import seaborn as sns
 5. **Document Learning**: Keep a mathematical journal with insights and discoveries
 6. **Practice Regularly**: Consistency beats intensity for long-term retention
 
-This program balances rigorous mathematical learning with practical computational skills, providing a strong foundation for advanced mathematical study while developing valuable programming abilities. The emphasis on conceptual understanding through visualization, combined with hands-on coding practice, will give you both theoretical knowledge and practical skills for applying mathematics in real-world situations.
+This program balances rigorous mathematical learning with practical computational skills, providing a strong foundation for advanced mathematical study while developing valuable programming abilities. The emphasis on conceptual understanding through visualization, combined with hands-on coding practice, aiming to provide both theoretical knowledge and practical skills for applying mathematics in real-world situations.
 
 
