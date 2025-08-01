@@ -12,7 +12,7 @@
 ### Step 1: Python Environment Setup (45 minutes)
 
 **Install Anaconda (Recommended)**
-1. **Download Anaconda**: Visit https://www.anaconda.com/ and download Python 3.x version
+1. **Download Anaconda**: Visit https://www.anaconda.com/ and download Python 3.x version (You do not need to install the full Anaconda distribution—Miniconda is absolutely enough for this project)
 2. **Install Anaconda**: Follow the installation guide
    - Windows: Run the .exe file, check "Add Anaconda to PATH"
    - Mac/Linux: Follow terminal instructions
