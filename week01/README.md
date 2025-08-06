@@ -1,8 +1,8 @@
 # Week 1: Mathematical Thinking and Python Setup - Detailed Step-by-Step Guide
 
 ## Week 1 Overview
-**Total Time**: 4-6 hours  
-**Goal**: Establish mathematical thinking patterns, set up Python environment, and review fundamental concepts  
+**Total Time**: 4-6 hours
+**Goal**: Establish mathematical thinking patterns, set up Python environment, and review fundamental concepts
 **Approach**: 70% setup and basics, 30% practice problems
 
 ---
@@ -145,42 +145,60 @@ Reflection Questions (answer in markdown cells):
 
 ### Step 1: Algebra Review and Practice (45 minutes)
 
+**Watch**: 3Blue1Brown live on The simpler quadratic formula: https://www.youtube.com/live/MHXO86wKeDY?si=uZi8sQtr5YRsBiEF
+
 Create notebook: "Week1-Algebra.ipynb"
 
 **Exercise Set 4: Basic Algebra Problems**
 ```
-#Solve these algebraically, then verify with Python
-Problem 1: Solve 3x + 7 = 22
-print("Problem 1: 3x + 7 = 22")
+#Exercise Set 4: Basic Algebra Problems
 
-#Your algebraic solution: x = ?
+#Solve these algebraically, then verify with Python
+#Problem 1: Solve 3*x + 7 = 22
+print("Problem 1: \n3x + 7 = 22")
 x1 = (22 - 7) / 3
-print(f"Solution: x = {x1}")
-print(f"Verification: 3({x1}) + 7 = {3*x1 + 7}")
+print("Solution:")
+print("x = (22 - 7) / 3")
+print(f"x = {x1}")
+print(f"Verification: \n3({x1}) + 7 = {3*x1 + 7}")
 
 #Problem 2: Solve 2(x - 3) = 4x + 8
-print("\nProblem 2: 2(x - 3) = 4x + 8")
-#Your algebraic solution: x = ?
-#Expand: 2x - 6 = 4x + 8
-#Rearrange: 2x - 4x = 8 + 6
-#Simplify: -2x = 14
+print("\nProblem 2: \n2(x - 3) = 4x + 8")
+print("Solution:")
+print("2x - 6 = 4x + 8") #Expand
+print("2x - 4x = 8 + 6") #Rearrange
+print("-2x = 14") #Simplify
 x2 = -14 / 2
-print(f"Solution: x = {x2}")
-print(f"Verification: 2({x2} - 3) = {2*(x2 - 3)}, 4({x2}) + 8 = {4*x2 + 8}")
+print(f"x = {x2}")
+print(f"Verification: \n2({x2} - 3) = {2*(x2 - 3)}, \n4({x2}) + 8 = {4*x2 + 8}")
 
 #Problem 3: Solve x² - 5x + 6 = 0
-print("\nProblem 3: x² - 5x + 6 = 0")
-#Factor: (x - 2)(x - 3) = 0
-#Solutions: x = 2 or x = 3
-x3_solutions =
-for sol in x3_solutions:
-    print(f"x = {sol}: {sol**2 - 5*sol + 6}")
+print("\nProblem 3: \nx² - 5x + 6 = 0")
+print("Solution:")
+# Coefficients
+a = 1
+b = -5
+c = 6
+print(f"a = {a}, b = {b}, c = {c} ")
+# Discriminant
+D = b**2 - 4*a*c
+print("D = b² - 4ac ")
+print(f"D = ({b})² - 4*{a}*{c} = {D}")
+# Square root of discriminant
+sqrt_D = math.sqrt(D)
+print(f"√D = √{D} = {sqrt_D}")
+# Roots using the quadratic formula
+x1 = (-b + sqrt_D) / (2 * a)
+x2 = (-b - sqrt_D) / (2 * a)
+print("x = (-b ± √D) / (2a)")
+print(f"x = (-({b}) ± √{D}) / (2*{a})")
+print(f"The solutions are: x' = {x1} and x''= {x2}")
 ```
 **Exercise Set 5: Using SymPy for Algebra**
 ```
-import sympy as sp
+#Exercise Set 5: Using SymPy for Algebra
 
-Define symbolic variable
+#Define symbolic variable
 x = sp.Symbol('x')
 
 #Solve equations symbolically
@@ -207,7 +225,6 @@ print(f"x² + 6x + 9 = {factored}")
 ```
 
 ### Step 2: Function Concepts (45 minutes)
-
 **Exercise Set 6: Functions and Their Properties**
 ```
 #Define and explore functions
@@ -466,7 +483,7 @@ plt.show()
 ### Self-Check Questions
 At the end of Week 1, you should be able to:
 
-1. **Python Setup**: 
+1. **Python Setup**:
    - ✅ Install and run Jupyter notebooks
    - ✅ Import and use mathematical libraries
    - ✅ Create basic plots
@@ -516,7 +533,7 @@ class QuizChecker:
             5: 38.48        # area of circle r=3.5
         }
         self.score = 0
-    
+
     def check_q1(self, x_value):
         """Check: Solve 3(x + 2) = 15"""
         if abs(x_value - self._answers[1]) < 0.01:
@@ -525,7 +542,7 @@ class QuizChecker:
         else:
             print("❌ Question 1: Try again!")
             print("Hint: Expand 3(x+2), then solve for x")
-    
+
     def check_q2(self, f_of_2):
         """Check: f(2) where f(x) = x² + 3x - 1"""
         if abs(f_of_2 - self._answers[2]) < 0.01:
@@ -534,13 +551,13 @@ class QuizChecker:
         else:
             print("❌ Question 2: Try again!")
             print("Hint: f(2) = (2)² + 3(2) - 1")
-    
+
     def check_q3(self, x_vertex, y_vertex):
         """Check: Vertex of y = x² - 4x + 3"""
         correct_x, correct_y = self._answers[3]
         x_ok = abs(x_vertex - correct_x) < 0.01
         y_ok = abs(y_vertex - correct_y) < 0.01
-        
+
         if x_ok and y_ok:
             print("✅ Question 3: CORRECT!")
             self.score += 1
@@ -550,7 +567,7 @@ class QuizChecker:
                 print("Hint: x-coordinate = -b/(2a) where a=1, b=-4")
             if not y_ok:
                 print("Hint: Substitute x-coordinate back into equation")
-    
+
     def check_q4(self, celsius):
         """Check: 75°F to Celsius"""
         if abs(celsius - self._answers[4]) < 0.1:
@@ -559,7 +576,7 @@ class QuizChecker:
         else:
             print("❌ Question 4: Try again!")
             print("Hint: C = (F - 32) × 5/9")
-    
+
     def check_q5(self, area):
         """Check: Area of circle with radius 3.5"""
         if abs(area - self._answers[5]) < 0.1:
@@ -568,7 +585,7 @@ class QuizChecker:
         else:
             print("❌ Question 5: Try again!")
             print("Hint: A = πr²")
-    
+
     def final_score(self):
         print(f"\n🎯 Final Score: {self.score}/5")
         if self.score == 5:
