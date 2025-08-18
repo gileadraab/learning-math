@@ -1,4 +1,4 @@
-# Week 1: Mathematical Thinking and Python Setup — Detailed Step-by-Step Guide (Enhanced)
+# Week 1: Mathematical Thinking and Python Setup — Detailed Step-by-Step Guide
 
 ## Week 1 Overview
 **Total Time:** 4–6 hours  
@@ -485,3 +485,4 @@ Create `week-01/Week1-Applications.ipynb`.
 - Get ready for **Week 2: Functions & Trigonometry**.
 
 ---
+
